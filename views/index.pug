@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  each message in messages
+    p
+      strong= message.user
+      | : #{message.text}
+      br
+      | Added: #{message.added}
+
