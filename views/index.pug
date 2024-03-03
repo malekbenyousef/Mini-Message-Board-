@@ -8,4 +8,8 @@ block content
       | : #{message.text}
       br
       | Added: #{message.added}
+  form(method="POST", action="/new")
+    input(type="text", name="user", placeholder="Your Name")
+    input(type="text", name="text", placeholder="Your Message")
+    button(type="submit") Add Message
 
